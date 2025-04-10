@@ -1,11 +1,12 @@
 html {
   scroll-behavior: smooth;
-  background-color: #F2EFE7;
-  color: #006A71;
+  background-color: #f3e8ff;
+  color: #2a1339;
   overflow-x: hidden;
 }
 
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,8 +14,8 @@ html {
 }
 
 body {
-  background-color: #F2EFE7;
-  color: #006A71;
+  background-color: #f3e8ff;
+  color: #2a1339;
   overflow-x: hidden;
 }
 
@@ -29,7 +30,7 @@ body {
 }
 
 #login {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -42,58 +43,66 @@ body {
   will-change: transform;
 }
 
+/* Shared container for both forms */
 .form-container {
   width: 100%;
   height: 100%;
   padding: 25px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Headings */
 .form-container h2 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.8rem;
-  color: #006A71;
+  color: #4a0072;
 }
 
+/* Input wrapper */
 .input-group {
   position: relative;
   margin-bottom: 12px;
   width: 100%;
 }
 
+/* Input fields */
 .input-group input {
   width: 100%;
   padding: 10px 42px 10px 14px;
   font-size: 1rem;
-  border: 1px solid #9ACBD0;
+  border: 1px solid #b388eb;
   border-radius: 6px;
-  background-color: #F2EFE7;
-  color: #006A71;
+  background-color: #faf5ff;
+  color: #2a1339;
 }
 
+/* Placeholder text */
 .input-group input::placeholder {
-  color: #48A6A7;
+  color: #8c6fa8;
   opacity: 1;
 }
 
+/* Eye icon */
 .input-group .toggle-password {
   position: absolute;
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #48A6A7;
+  color: #6a1b9a;
   font-size: 0.95rem;
 }
 
+/* Buttons */
 .form-container button {
   width: 100%;
   padding: 10px;
   font-size: 1rem;
-  background-color: #006A71;
+  background-color: #6a1b9a;
   color: white;
   border-radius: 6px;
   border: 1px double #000;
@@ -103,9 +112,10 @@ body {
 }
 
 .form-container button:hover {
-  background-color: #003f44;
+  background-color: #32004f;
 }
 
+/* Below-form link */
 .form-container p {
   text-align: center;
   margin-top: 12px;
@@ -113,7 +123,7 @@ body {
 }
 
 .text-button {
-  color: #006A71;
+  color: #000;
   cursor: pointer;
   text-decoration: underline;
   background: none;
@@ -123,7 +133,40 @@ body {
 }
 
 .text-button:hover {
-  color: #003f44;
+  color: #ffffff;
+}
+
+#signUpContainer {
+  transition: all 0.5s ease;
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease;
+  will-change: transform, opacity;
+}
+
+
+.fade-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 1s ease;
+  will-change: transform, opacity;
+}
+
+.fade-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-left, .fade-right {
+  transform: translateZ(0);
 }
 
 .top-nav {
@@ -132,7 +175,7 @@ body {
   justify-content: space-between;
   align-items: stretch;
   padding: 0 30px;
-  background-color: #006A71;
+  background-color: #6a1b9a;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   color: white;
   position: fixed;
@@ -171,12 +214,17 @@ body {
   justify-content: center;
   padding: 0 25px;
   height: 100%;
-  cursor: pointer;
   transition: background-color 0.3s ease;
+  cursor: pointer;
+  position: relative;
 }
 
 .auth-box:hover {
-  background-color: #00494e;
+  background-color: #32004f;
+}
+
+.auth-box::after {
+  display: none;
 }
 
 .auth-box span {
@@ -195,11 +243,11 @@ body {
   font-size: 0.9rem;
   padding: 0 10px;
   cursor: pointer;
+  position: relative;
   color: white;
   height: 100%;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .nav-mini-btn::after {
@@ -224,7 +272,7 @@ section {
 }
 
 #header {
-  background: linear-gradient(to right, #F2EFE7 20%, transparent),
+  background: linear-gradient(to right, #ede7f6 20%, transparent),
     url(https://images.pexels.com/photos/19149641/pexels-photo-19149641/free-photo-of-building-of-taj-mahal-in-india.jpeg) no-repeat left center;
   background-size: cover;
   display: flex;
@@ -237,7 +285,7 @@ section {
 #header h2 {
   font-size: 3.5rem;
   font-weight: 600;
-  color: #006A71;
+  color: #4a0072;
   margin-bottom: 20px;
   text-align: left;
   opacity: 0;
@@ -251,13 +299,14 @@ section {
 }
 
 #description-section {
-  background: linear-gradient(to left, #9ACBD0 20%, transparent),
+  background: linear-gradient(to left, #e1bee7 20%, transparent),
     url(https://images.pexels.com/photos/10930112/pexels-photo-10930112.jpeg) no-repeat right center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   animation: subtleZoom 20s infinite alternate;
+  margin: 0;
   padding: 100px 2.5% 60px;
 }
 
@@ -265,7 +314,7 @@ section {
   font-size: 1.2rem;
   font-weight: 300;
   max-width: 500px;
-  color: #006A71;
+  color: #4a0072;
   text-align: right;
   line-height: 1.6;
   opacity: 0;
@@ -279,39 +328,40 @@ section {
 }
 
 .preview-section {
-  background-color: #F2EFE7;
+  background-color: #f3e5f5;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   padding: 60px 2.5%;
+  margin: 0;
 }
 
 .preview-block {
   width: 300px;
   height: 200px;
-  background-color: #9ACBD0;
-  border: 2px solid #48A6A7;
+  background-color: #e1bee7;
+  border: 2px solid #ba68c8;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #006A71;
+  color: #4a0072;
   font-size: 1rem;
 }
 
 .most-visited-section {
-  background-color: #F2EFE7;
+  background-color: #ede7f6;
   padding: 80px 2.5%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.8rem;
   font-weight: 500;
-  color: #006A71;
+  color: #6a1b9a;
 }
 
 .future-section {
-  background-color: #F2EFE7;
+  background-color: #f3e5f5;
   padding: 80px 2.5%;
   display: flex;
   flex-direction: column;
@@ -321,19 +371,19 @@ section {
 
 .future-section h2 {
   font-size: 2.2rem;
-  color: #006A71;
+  color: #6a1b9a;
   margin-bottom: 20px;
 }
 
 .future-section ul {
   list-style: none;
   font-size: 1rem;
-  color: #48A6A7;
+  color: #4a0072;
   line-height: 1.8;
 }
 
 footer {
-  background-color: #006A71;
+  background-color: #6a1b9a;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -349,28 +399,6 @@ footer {
   font-size: 1.2rem;
 }
 
-.message-box {
-  position: fixed;
-  top: 45%;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 300px;
-  max-width: 500px;
-  padding: 30px 20px;
-  font-size: 1.1rem;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(12px);
-  border: 2px solid #9ACBD0;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 106, 113, 0.2);
-  color: #006A71;
-  text-align: center;
-  z-index: 1000;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out;
-}
-
 @keyframes subtleZoom {
   0% {
     background-size: 100%;
@@ -380,42 +408,68 @@ footer {
   }
 }
 
-/* Mobile Optimization */
-@media (max-width: 768px) {
-  .top-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 15px;
-  }
-  .logo {
-    font-size: 1.8rem;
-    line-height: normal;
-  }
-  .nav-links, .auth-container {
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    gap: 10px;
-    margin-left: 0;
-    margin-top: 10px;
-  }
-  .auth-box {
-    padding: 10px 0;
-    width: 100%;
-    justify-content: flex-start;
-  }
-  .form-container {
-    padding: 15px;
-  }
-  .form-container h2 {
-    font-size: 1.5rem;
-  }
-  .input-group input {
-    font-size: 0.95rem;
-  }
-  .form-container button {
-    font-size: 0.95rem;
-    padding: 10px 8px;
-  }
+/* Message Box (Success / Error) */
+.message-box {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+  max-width: 500px;
+  padding: 30px 20px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border: 2px solid #b388eb;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(106, 27, 154, 0.2);
+  color: #4a0072;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
 }
+
+#header, #description-section {
+  animation-delay: 0.5s;
+}
+    /* Mobile optimizations */
+    @media (max-width: 768px) {
+      .top-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 15px;
+      }
+      .logo {
+        font-size: 1.8rem;
+        line-height: normal;
+      }
+      .nav-links, .auth-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+      .auth-box {
+        padding: 10px 0;
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .form-container {
+        padding: 15px;
+      }
+      .form-container h2 {
+        font-size: 1.5rem;
+      }
+      .input-group input {
+        font-size: 0.95rem;
+      }
+      .form-container button {
+        font-size: 0.95rem;
+        padding: 10px 8px;
+      }
+    }
