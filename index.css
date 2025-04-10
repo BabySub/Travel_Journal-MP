@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
-  background-color: #F2EFE7;
-  color: #006A71;
+  background-color: #1C1B2A;
+  color: #F4EDE8;
   overflow-x: hidden;
 }
 
@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  background-color: #F2EFE7;
-  color: #006A71;
+  background-color: #1C1B2A;
+  color: #F4EDE8;
   overflow-x: hidden;
 }
 
@@ -29,15 +29,16 @@ body {
 }
 
 #login {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(42, 39, 63, 0.85);
   backdrop-filter: blur(10px);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
   width: 100%;
   max-width: 600px;
   min-height: 420px;
   padding: 20px;
   scroll-margin-top: 100px;
+  border: 1px solid #A06C8A;
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
   will-change: transform;
 }
@@ -55,7 +56,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.8rem;
-  color: #006A71;
+  color: #DDA3A0;
 }
 
 .input-group {
@@ -68,14 +69,14 @@ body {
   width: 100%;
   padding: 10px 42px 10px 14px;
   font-size: 1rem;
-  border: 1px solid #9ACBD0;
+  border: 1px solid #C48A95;
   border-radius: 6px;
-  background-color: #F2EFE7;
-  color: #006A71;
+  background-color: #2A273F;
+  color: #F4EDE8;
 }
 
 .input-group input::placeholder {
-  color: #48A6A7;
+  color: #C48A95;
   opacity: 1;
 }
 
@@ -85,7 +86,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #48A6A7;
+  color: #C48A95;
   font-size: 0.95rem;
 }
 
@@ -93,17 +94,17 @@ body {
   width: 100%;
   padding: 10px;
   font-size: 1rem;
-  background-color: #006A71;
+  background-color: #A06C8A;
   color: white;
   border-radius: 6px;
-  border: 1px double #000;
+  border: 1px solid #805670;
   cursor: pointer;
   margin-top: 10px;
   transition: background-color 0.3s ease;
 }
 
 .form-container button:hover {
-  background-color: #003f44;
+  background-color: #805670;
 }
 
 .form-container p {
@@ -113,7 +114,7 @@ body {
 }
 
 .text-button {
-  color: #006A71;
+  color: #C48A95;
   cursor: pointer;
   text-decoration: underline;
   background: none;
@@ -123,7 +124,7 @@ body {
 }
 
 .text-button:hover {
-  color: #003f44;
+  color: #F4EDE8;
 }
 
 .top-nav {
@@ -132,10 +133,10 @@ body {
   justify-content: space-between;
   align-items: stretch;
   padding: 0 30px;
-  background-color: rgba(22, 92, 120, 0.5);
-  backdrop-filter: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  color: white;
+  background-color: rgba(28, 27, 42, 0.5);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  color: #F4EDE8;
   position: fixed;
   top: 0;
   left: 0;
@@ -177,7 +178,7 @@ body {
 }
 
 .auth-box:hover {
-  background-color: #00494e;
+  background-color: #805670;
 }
 
 .auth-box span {
@@ -196,7 +197,7 @@ body {
   font-size: 0.9rem;
   padding: 0 10px;
   cursor: pointer;
-  color: white;
+  color: #F4EDE8;
   height: 100%;
   display: flex;
   align-items: center;
@@ -210,7 +211,7 @@ body {
   left: 0;
   height: 4px;
   width: 100%;
-  background-color: white;
+  background-color: #F4EDE8;
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
 }
@@ -225,7 +226,7 @@ section {
 }
 
 #header {
-  background: linear-gradient(to right, #F2EFE7 20%, transparent),
+  background: linear-gradient(to right, #1C1B2A 30%, transparent),
     url(https://images.pexels.com/photos/19149641/pexels-photo-19149641/free-photo-of-building-of-taj-mahal-in-india.jpeg) no-repeat left center;
   background-size: cover;
   display: flex;
@@ -238,7 +239,7 @@ section {
 #header h2 {
   font-size: 3.5rem;
   font-weight: 600;
-  color: #006A71;
+  color: #DDA3A0;
   margin-bottom: 20px;
   text-align: left;
   opacity: 0;
@@ -252,7 +253,7 @@ section {
 }
 
 #description-section {
-  background: linear-gradient(to left, #9ACBD0 20%, transparent),
+  background: linear-gradient(to left, #2A273F 25%, transparent),
     url(https://images.pexels.com/photos/10930112/pexels-photo-10930112.jpeg) no-repeat right center;
   background-size: cover;
   display: flex;
@@ -266,7 +267,7 @@ section {
   font-size: 1.2rem;
   font-weight: 300;
   max-width: 500px;
-  color: #006A71;
+  color: #EAD7D1;
   text-align: right;
   line-height: 1.6;
   opacity: 0;
@@ -280,7 +281,7 @@ section {
 }
 
 .preview-section {
-  background-color: #F2EFE7;
+  background-color: #1C1B2A;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -291,28 +292,28 @@ section {
 .preview-block {
   width: 300px;
   height: 200px;
-  background-color: #9ACBD0;
-  border: 2px solid #48A6A7;
+  background-color: #3B3758;
+  border: 2px solid #A06C8A;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #006A71;
+  color: #F4EDE8;
   font-size: 1rem;
 }
 
 .most-visited-section {
-  background-color: #F2EFE7;
+  background-color: #1C1B2A;
   padding: 80px 2.5%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.8rem;
   font-weight: 500;
-  color: #006A71;
+  color: #DDA3A0;
 }
 
 .future-section {
-  background-color: #F2EFE7;
+  background-color: #1C1B2A;
   padding: 80px 2.5%;
   display: flex;
   flex-direction: column;
@@ -322,20 +323,20 @@ section {
 
 .future-section h2 {
   font-size: 2.2rem;
-  color: #006A71;
+  color: #F4EDE8;
   margin-bottom: 20px;
 }
 
 .future-section ul {
   list-style: none;
   font-size: 1rem;
-  color: #48A6A7;
+  color: #C48A95;
   line-height: 1.8;
 }
 
 footer {
-  background-color: #006A71;
-  color: white;
+  background-color: #2A273F;
+  color: #F4EDE8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -344,7 +345,7 @@ footer {
 }
 
 .social-icons a {
-  color: white;
+  color: #F4EDE8;
   margin: 0 10px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -359,26 +360,17 @@ footer {
   max-width: 500px;
   padding: 30px 20px;
   font-size: 1.1rem;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(42, 39, 63, 0.95);
   backdrop-filter: blur(12px);
-  border: 2px solid #9ACBD0;
+  border: 2px solid #C48A95;
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 106, 113, 0.2);
-  color: #006A71;
+  box-shadow: 0 8px 24px rgba(197, 153, 182, 0.2);
+  color: #F4EDE8;
   text-align: center;
   z-index: 1000;
   display: none;
   opacity: 0;
   transition: opacity 0.7s ease-in-out;
-}
-
-@keyframes subtleZoom {
-  0% {
-    background-size: 100%;
-  }
-  100% {
-    background-size: 105%;
-  }
 }
 
 /* Mobile Optimization */
@@ -388,12 +380,17 @@ footer {
     align-items: flex-start;
     height: auto;
     padding: 15px;
+    backdrop-filter: none;
+    background-color: rgba(28, 27, 42, 0.95);
   }
+
   .logo {
     font-size: 1.8rem;
     line-height: normal;
   }
-  .nav-links, .auth-container {
+
+  .nav-links,
+  .auth-container {
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
@@ -401,22 +398,49 @@ footer {
     margin-left: 0;
     margin-top: 10px;
   }
+
   .auth-box {
     padding: 10px 0;
     width: 100%;
     justify-content: flex-start;
   }
+
   .form-container {
     padding: 15px;
   }
+
   .form-container h2 {
     font-size: 1.5rem;
   }
+
   .input-group input {
     font-size: 0.95rem;
   }
+
   .form-container button {
     font-size: 0.95rem;
     padding: 10px 8px;
   }
+  #header::before, #description-section::before {
+    animation: none;
+    transform: scale(1);
+  }
+
+}
+#header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  transform-origin: center;
+  animation: smoothZoom 20s infinite alternate;
+}
+
+@keyframes smoothZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
 }
